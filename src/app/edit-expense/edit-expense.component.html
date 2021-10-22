@@ -1,0 +1,51 @@
+<div class="container bg-light w-50 mt-5 p-3">
+    <div class="display-2">Record New Expense</div>
+    <hr>
+    <div class="p-1"> 
+        <form [formGroup]="expenseForm" (submit)="update()">
+    <div class="mb-1 p-2 ">
+
+        <label for="exampleDataList" class="form-label m-2">Select your Expense</label>
+        <input class="form-control" formControlName="selectExpense" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+        <datalist id="datalistOptions">
+            <option value="Home Rent">
+            <option value="Groceary">
+            <option value="Light Bill">
+            <option value="Train ticket">
+            <option value="Doctor visit Fess ">
+            <option value="Mobile bill">
+            <option value="Petrol">
+            <option value="College Fess">
+            <option value="Food and vegetables cost">
+            <option value="travelling cost">
+            <option value="New Dress Cost ">
+            <option value="Shoes">
+            <option value="Cleaning Cost">
+            <option value="Apartemnt bill">
+            <option value="Loans and banks borrow ">
+            <option value="Other expenses">
+        </datalist>
+    </div>
+    <div class="mb-1 p-2 ">
+        <label for="formGroupExampleInput" class="form-label m-2">Expenses Notes</label>
+        <input type="text" class="form-control" formControlName="expenseDetail" id="formGroupExampleInput" placeholder="Expense Short Detail">
+    </div>
+    <div class="row p-2 ">
+        <div class="col">
+            <input type="text" class="form-control"formControlName="amount" placeholder="Expense Amount " aria-label="First name">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" formControlName="dateOfExpense" placeholder="Date:dd/mm/yy " aria-label="First name">
+
+
+        </div>
+
+    </div>
+    <div class=" text-end m-2">
+        <button type="submit" class="btn btn-primary ">Save <i class="fas fa-save m-1"></i></button>
+        <button type="button" class="btn btn-danger ms-2 " (click)="cancelexpence()">Cancel <i class="fas fa-times m-1"></i></button>
+    </div>
+</form>
+</div>
+
+</div>
