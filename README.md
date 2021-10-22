@@ -1,3 +1,6 @@
+![Screenshot (144)](https://user-images.githubusercontent.com/87297598/138508364-0cbc8720-97ee-4f18-8f6d-7f5d2e47c3d6.png)
+![Screenshot (142)](https://user-images.githubusercontent.com/87297598/138508398-4d7f1bd4-919d-4c8a-a253-180bc4ae23e0.png)
+
 # Expensetracker
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
